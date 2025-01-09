@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TERRE", "TERRE", "{C30432D2-EDBF-4729-BF73-08147B5400E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terre00", "..\Terre00\Terre00.csproj", "{6FF02528-0FC6-4277-A730-9550F6F2B88C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Terre01", "..\Terre01\Terre01.csproj", "{9D83A75F-27B5-4C2F-AF8F-4DD77F799AE6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6FF02528-0FC6-4277-A730-9550F6F2B88C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF02528-0FC6-4277-A730-9550F6F2B88C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF02528-0FC6-4277-A730-9550F6F2B88C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF02528-0FC6-4277-A730-9550F6F2B88C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9D83A75F-27B5-4C2F-AF8F-4DD77F799AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D83A75F-27B5-4C2F-AF8F-4DD77F799AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D83A75F-27B5-4C2F-AF8F-4DD77F799AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D83A75F-27B5-4C2F-AF8F-4DD77F799AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6FF02528-0FC6-4277-A730-9550F6F2B88C} = {C30432D2-EDBF-4729-BF73-08147B5400E1}
+		{9D83A75F-27B5-4C2F-AF8F-4DD77F799AE6} = {C30432D2-EDBF-4729-BF73-08147B5400E1}
+	EndGlobalSection
+EndGlobal
