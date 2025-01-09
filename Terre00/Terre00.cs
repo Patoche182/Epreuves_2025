@@ -12,18 +12,16 @@ Attention : votre programme devra utiliser une boucle.
 
 // Méthode 0 (Ascii) :
 
-using System.Reflection;
-
 class Terre00
 {
     static void Main()
     {
-        string alphabet = ""; // Création d'une chaîne pour stocker l'alphabet
+        string alphabet = "";                   // Création d'une chaîne pour stocker l'alphabet
 
-        for (int i = 97; i <= 122; i++) // Utilisation d'une boucle pour concaténer les lettres à la chaîne alphabet
+        for (int i = 97; i <= 122; i++)         // Utilisation d'une boucle pour concaténer les lettres à la chaîne alphabet
         {
-            alphabet += (char)i; // Incrémentation de la variable alphabet
+            alphabet += (char)i;                // Incrémentation de la variable alphabet
         }
-        Console.WriteLine(alphabet); // Affichage de l'alphabet sur une seule ligne
+        Console.WriteLine(alphabet);            // Affichage de l'alphabet sur une seule ligne
     }
 }
