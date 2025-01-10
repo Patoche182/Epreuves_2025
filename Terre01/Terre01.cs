@@ -10,6 +10,7 @@ Exemples d’utilisation :
 |||||||||||||||||||||||| Objectif : apprendre comment récupérer le chemin de la localisation d'un fichier et le formater (en utilisant Assembly.Get) ||||||||||||||||||||||||
 */
 
+using System;
 using System.Reflection;
 
 class Terre01
@@ -22,3 +23,32 @@ class Terre01
         Console.WriteLine(fichierSource);                                       //Console.WriteLine(fichierSource) affiche le nom du fichier source sur la console.
     }
 }
+
+// Methode 0:
+//    string chemin = Process.GetCurrentProcess().MainModule.FileName;  //Obtenir le chemin d'accès complet du programme en cours d'exécution
+//    string fichier = System.IO.Path.GetFileName(chemin);              //Extraire le nom du fichier à partir du chemin complet
+//    Console.WriteLine(fichier);                                       //Afficher le nom du fichier
+
+// Methode 1:
+//    Console.WriteLine($"Le nom du programme est : {AppDomain.CurrentDomain.FriendlyName}" + ".cs");
+//    Console.WriteLine("----------");
+
+// Methode 2:
+//    string filePath = @"C:\Users\patri\source\repos\CodingAccelerator\Terre01.cs";
+//    string fileName = Path.GetFileName(filePath);
+//    Console.WriteLine("Nom du fichier : " + fileName);
+
+// Methode 3:
+//static void Main(string[] args)
+//    // Vérifier si des arguments ont été passés en ligne de commande
+//    if (args.Length > 0)
+//    {
+//        // Si oui, afficher le nom du premier fichier passé en argument
+//        string fichier = System.IO.Path.GetFileName(args[0]);
+//        Console.WriteLine(fichier);
+//    }
+//    else
+//    {
+//        // Si aucun argument n'est passé, afficher un message d'erreur
+//        Console.WriteLine("Aucun fichier spécifié en argument.");
+//    }
