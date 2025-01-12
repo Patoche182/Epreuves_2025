@@ -6,11 +6,8 @@ Exemples d’utilisation :
     abcdefghijklmnopqrstuvwxyz
     $>
 Attention : votre programme devra utiliser une boucle. 
-
-|||||||||||||||||||||||| Objectif : apprendre qu'on peut récupérer simplement chaque caractère a l'aide d'un code ASCII ||||||||||||||||||||||||
 */
 
-// Méthode 0 (Ascii) :
 
 class Terre00
 {
