@@ -6,11 +6,8 @@ Exemples d’utilisation :
     exo.js
     $> node crevette.js
     crevette.js
-
-|||||||||||||||||||||||| Objectif : apprendre comment récupérer le chemin de la localisation d'un fichier et le formater (en utilisant Assembly.Get) ||||||||||||||||||||||||
 */
 
-using System;
 using System.Reflection;
 
 class Terre01
