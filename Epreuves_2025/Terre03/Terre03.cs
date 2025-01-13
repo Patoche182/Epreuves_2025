@@ -18,7 +18,5 @@ class Terre03
         Console.WriteLine("==========-==========-==========-==========-==========");
         Console.WriteLine("Bonjour ! \nBienvenue dans ce programme. \nCette console donne l'alphabet à partir de la lettre donnée en argument.");
         Console.WriteLine("==========-==========-==========-==========-==========");
-
-        
     }
 }
