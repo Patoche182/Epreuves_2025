@@ -46,6 +46,7 @@ class Terre03
         while (true)
         {
             Console.Write("Veuillez entrer une lettre : (ou 'exit' pour quitter)");
+            Console.WriteLine();
             string userInput = Console.ReadLine().ToLower();
 
             if (userInput == "exit")
@@ -55,6 +56,7 @@ class Terre03
             {
                 char userLetter = userInput[0];
                 GetAlphabetFromLetter(char.ToLower(userLetter));
+                Console.WriteLine();
             }
             else
             {
@@ -67,7 +69,7 @@ class Terre03
 
     static void GetAlphabetFromLetter(char letter)
     {
-        string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; // abcdefghijklmnopqrstuvwxyz "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //  abcdefghijklmnopqrstuvwxyz  "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         letter = char.ToLower(letter);
         bool found = false; // J'intègre un bool ==> 
         /*
