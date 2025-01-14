@@ -15,10 +15,6 @@ class Terre03
 {
     static void Main()
     {
-        Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.WriteLine("Bonjour ! \nBienvenue dans ce programme. \nCette console donne l'alphabet à partir de la lettre donnée en argument.");
-        Console.WriteLine("==========-==========-==========-==========-==========");
-
         // Méthode 2 :
 
         // Avant Optimisation ChatGPT
