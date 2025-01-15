@@ -8,23 +8,51 @@ Exemples d’utilisation :
     crevette.js
 */
 
+using System.Diagnostics;
 using System.Reflection;
 
 class Terre01
 {
     static void Main(string[] args)
     {
-        string cheminExecutable = Assembly.GetExecutingAssembly().Location;     // récupère le chemin d'accès complet du fichier exécutable (.exe) de l'application en cours d'exécution.
-        string cheminSource = Path.ChangeExtension(cheminExecutable, ".cs");    // modifie l'extension du chemin récupéré pour obtenir le chemin d'accès complet du fichier source(.cs) correspondant à l'exécutable.
-        string fichierSource = Path.GetFileName(cheminSource);                  // extrait le nom du fichier source à partir du chemin complet du fichier source.
-        Console.WriteLine(fichierSource);                                       // affiche le nom du fichier source sur la console.
+        //Methode 0 : 
+        Console.WriteLine(AppDomain.CurrentDomain.FriendlyName + ".cs");
+
+        // Methode 1 :
+        string path = Process.GetCurrentProcess().MainModule.FileName;              //Obtenir le chemin d'accès complet du programme en cours d'exécution
+        string file = System.IO.Path.GetFileName(path);                             //Extraire le nom du fichier à partir du chemin complet
+        Console.WriteLine(file);                                                    //Afficher le nom du fichier
+
+        // Methode 2 :
+        string executablePath = Assembly.GetExecutingAssembly().Location;           // récupère le chemin d'accès complet du fichier exécutable (.exe) de l'application en cours d'exécution.
+        string[] segments = executablePath.Split(Path.DirectorySeparatorChar);      // Séparer les segments du chemin avec Path.DirectorySeparatorChar
+
+        // Methode 3 :
+        string lastSegment = segments.Last();                                       // Utilise .Last()
+        Console.WriteLine(lastSegment);
+
+        // Methode 4 :
+        string lastSegmentIndex = segments[^1];                                     // Utilise l'indexation de fin
+        Console.WriteLine(lastSegmentIndex);
+
+        // Methode attendu ?
+        string pathProgram = Process.GetCurrentProcess().MainModule.FileName;
+        Console.WriteLine(pathProgram);
+        string[] iteration = pathProgram.Split("\\");                               // On sépare par l'antiSlash "\" (qu'on échap ici => "\\")
+        string lastIteration = iteration.Last();
+        Console.WriteLine(iteration[5]);                                            // Exemple pour récupérer un index quelconque 
+        Console.WriteLine(lastIteration);
+        string programName = lastIteration.Replace(".exe", ".cs");                  // On remplace le .exe par .cs pour convenir à l'énoncé ...
+        Console.WriteLine(programName);
     }
 }
 
-// Methode 0:
-//    string chemin = Process.GetCurrentProcess().MainModule.FileName;  //Obtenir le chemin d'accès complet du programme en cours d'exécution
-//    string fichier = System.IO.Path.GetFileName(chemin);              //Extraire le nom du fichier à partir du chemin complet
-//    Console.WriteLine(fichier);                                       //Afficher le nom du fichier
+
+
+
+
+
+
 
 // Methode 1:
 //    Console.WriteLine($"Le nom du programme est : {AppDomain.CurrentDomain.FriendlyName}" + ".cs");
