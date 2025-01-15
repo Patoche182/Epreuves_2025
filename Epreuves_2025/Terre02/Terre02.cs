@@ -33,9 +33,6 @@ class Terre02
 
 
 
-
-
-
 // Methode 2:
 //do
 //{
