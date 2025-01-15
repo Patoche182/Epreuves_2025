@@ -2,7 +2,7 @@
   "profiles": {
     "Terre02": {
       "commandName": "Project",
-      "commandLineArgs": "Je suis solide \"je suis solide\""
+      "commandLineArgs": "Je suis solide \"je suis solide\" toto.ty titi, tata oo,uu \"allé là, t'as vu?\" MagicLeGars -avoue- ! "
     }
   }
 }

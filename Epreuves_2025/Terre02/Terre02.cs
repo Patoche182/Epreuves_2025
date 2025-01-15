@@ -8,67 +8,55 @@ Exemples d’utilisation :
     solide
     !
 */
-
 class Terre02
 {
-    static void Main()
+    static void Main(string[] args)
     {
-        do
+        if (args.Length == 0)
         {
-            Console.WriteLine("Veuillez entrer une phrase, ex : je suis solide ! (ou 'exit' pour quitter) :");
-            string input = Console.ReadLine();
-            if (input.ToLower() == "exit")
-                break;
-
-            string[] phraseInput = { input };
-            Console.WriteLine("---------- ---------- ---------- ----------");
-            ConvertirPhrase(phraseInput);
-            Console.WriteLine("---------- ---------- ---------- ----------");
-        } while (true);
+            Console.WriteLine("Aucun argument n'a été fourni.");
+        }
+        else
+        {
+            GetArgs(args);
+        }
     }
 
-    static void ConvertirPhrase(string[] phraseInput)
+    static void GetArgs(string[] args)
     {
-        for (int mot = 0; mot < phraseInput.Length; mot++)
+        for (int i = 0; i < args.Length; i++)
         {
-            string[] splitPhraseInput = phraseInput[mot].Split(' ');        // On utilise la méthode Split pour diviser la chaîne par les espaces
-
-            for (int mots = 0; mots < splitPhraseInput.Length; mots++)      // On affiche chaque élément de la chaîne divisée ligne par ligne
-            {
-                Console.WriteLine(splitPhraseInput[mots].Trim());           // On utilise Trim pour supprimer les espaces autour des mots
-            }
+            Console.WriteLine(args[i]);
         }
-        Console.WriteLine();
     }
 }
 
 
 
-//Console.WriteLine("==========-==========-==========-==========-==========");
-//Console.WriteLine("Bonjour ! \nBienvenue dans ce programme. \nCette console affiche les arguments reçus ligne par ligne.");
-//Console.WriteLine("==========-==========-==========-==========-==========");
 
-//// Methode 1:
 
-//            string[] args = {"Je s'appelle Groot !", "Je suis là...", "\\m/_Children_Of_Bodom COB"};
-//            GetArgs(args);
-//        }
-
-//        static void GetArgs(string[] args)
-//        {
-//            for (int i = 0; i < args.Length; i++)
-//            {
-//                string[] splitArgs = args[i].Split(' ');
-
-//                for (int j = 0; j < splitArgs.Length; j++)
-//                {
-//                    Console.WriteLine(splitArgs[j]);
-//                }
-//            }
-//            Console.WriteLine("---------- ---------- ----------");
-//            Console.WriteLine();
-//        }
-//    }
-//}
 
 // Methode 2:
+//do
+//{
+//    Console.WriteLine("Veuillez entrer une phrase, ex : je suis solide ! (ou 'exit' pour quitter) :");
+//    string input = Console.ReadLine();
+//    if (input.ToLower() == "exit")
+//        break;
+//    string[] phraseInput = { input };
+//    ConvertirPhrase(phraseInput);
+//} while (true);
+//    }
+
+//    static void ConvertirPhrase(string[] phraseInput)
+//{
+//    for (int mot = 0; mot < phraseInput.Length; mot++)
+//    {
+//        string[] splitPhraseInput = phraseInput[mot].Split(' ');        // On utilise la méthode Split pour diviser la chaîne par les espaces
+
+//        for (int mots = 0; mots < splitPhraseInput.Length; mots++)      // On affiche chaque élément de la chaîne divisée ligne par ligne
+//        {
+//            Console.WriteLine(splitPhraseInput[mots].Trim());           // On utilise Trim pour supprimer les espaces autour des mots
+//        }
+//    }
+//    Console.WriteLine();
