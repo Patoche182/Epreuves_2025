@@ -57,9 +57,7 @@ class Terre03
             else
             {
                 Console.WriteLine("\n-------------=-------------=-------------=-------------=-------------");
-                Console.WriteLine("\n-------------=-------------=-------------=-------------=-------------");
                 Console.WriteLine("Entrée non valide. Vous avez entré un chiffre ou plusieurs caractères.");
-                Console.WriteLine("-------------=-------------=-------------=-------------=-------------\n");
                 Console.WriteLine("-------------=-------------=-------------=-------------=-------------\n");
             }
         }
