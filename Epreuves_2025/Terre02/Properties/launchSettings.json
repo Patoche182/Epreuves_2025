@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Terre02": {
+      "commandName": "Project",
+      "commandLineArgs": "Je suis solide \"je suis solide\""
+    }
+  }
+}

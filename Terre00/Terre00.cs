@@ -8,17 +8,22 @@ Exemples d’utilisation :
 Attention : votre programme devra utiliser une boucle. 
 */
 
-
 class Terre00
 {
     static void Main()
     {
-        string alphabet = "";                   // Création d'une chaîne pour stocker l'alphabet
+        string alphabet = "";                       // Création d'une chaîne vide pour stocker l'alphabet
 
-        for (int i = 97; i <= 122; i++)         // Utilisation d'une boucle pour concaténer les lettres à la chaîne alphabet
+        // On stock le a dans une variable          // | DÉC | OCT | HEX | BIN	    | Symbole |	Numéro HTML | Description |
+        int firstLetter = 97;                       // | 97  | 141 | 61  | 01100001 |   a	  |  &#97;	 	| a minuscule | => Table des codes ASCII
+
+        // On stock le z dans une variable          // | DÉC | OCT | HEX | BIN	    | Symbole |	Numéro HTML | Description |
+        int lastLetter = 122;                       // | 122 |	172| 7A  | 01111010 |	z     |	 &#122;     | z minuscule | => Table des codes ASCII
+
+        for (int i = firstLetter; i <= lastLetter; i++) // Utilisation d'une boucle pour concaténer les lettres à la chaîne alphabet
         {
-            alphabet += (char)i;                // Incrémentation de la variable alphabet
+            alphabet += (char)i;                    // Incrémentation de la variable alphabet
         }
-        Console.WriteLine(alphabet);            // Affichage de l'alphabet sur une seule ligne
+        Console.WriteLine(alphabet);                // Affichage de l'alphabet sur une seule ligne
     }
 }
