@@ -18,7 +18,7 @@ class Terre00
         int firstLetter = 97;                       // | 97  | 141 | 61  | 01100001 |   a	  |  &#97;	 	| a minuscule | => Table des codes ASCII
 
         // On stock le z dans une variable          // | DÉC | OCT | HEX | BIN	    | Symbole |	Numéro HTML | Description |
-        int lastLetter = 122;                       // | 122 |	172| 7A  | 01111010 |	z     |	 &#122;     | z minuscule | => Table des codes ASCII
+        int lastLetter = 122;                       // | 122 | 172 | 7A  | 01111010 |	z     |	 &#122;     | z minuscule | => Table des codes ASCII
 
         for (int i = firstLetter; i <= lastLetter; i++) // Utilisation d'une boucle pour concaténer les lettres à la chaîne alphabet
         {
