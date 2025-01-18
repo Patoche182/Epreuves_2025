@@ -15,29 +15,6 @@ class Terre03
 {
     static void Main()
     {
-        while (true)
-        {
-            Console.Write("Veuillez entrer une lettre : (ou 'exit' pour quitter)");
-            Console.WriteLine();
-            string userInput = Console.ReadLine().ToLower();
-
-            if (userInput == "exit")
-                break;
-
-            if (userInput.Length == 1 && char.IsLetter(userInput[0]))
-            {
-                char userLetter = userInput[0];
-                GetAlphabetFromLetter(char.ToLower(userLetter));
-                Console.WriteLine();
-            }
-            else
-            {
-                Console.WriteLine("\n-------------=-------------=-------------=-------------=-------------");
-                Console.WriteLine("Entrée non valide. Vous avez entré un chiffre ou plusieurs caractères.");
-                Console.WriteLine("-------------=-------------=-------------=-------------=-------------\n");
-            }
-        }
-
         // Méthode 2 :
 
         // Avant Optimisation ChatGPT
@@ -62,6 +39,28 @@ class Terre03
         //}
 
         // Après Optimisation ChatGPT
+        while (true)
+        {
+            Console.Write("Veuillez entrer une lettre : (ou 'exit' pour quitter)");
+            Console.WriteLine();
+            string userInput = Console.ReadLine().ToLower(); // a supp
+
+            if (userInput == "exit")
+                break;
+
+            if (userInput.Length == 1 && char.IsLetter(userInput[0]))
+            {
+                char userLetter = userInput[0];
+                GetAlphabetFromLetter(char.ToLower(userLetter));
+                Console.WriteLine();
+            }
+            else
+            {
+                Console.WriteLine("\n-------------=-------------=-------------=-------------=-------------");
+                Console.WriteLine("Entrée non valide. Vous avez entré un chiffre ou plusieurs caractères.");
+                Console.WriteLine("-------------=-------------=-------------=-------------=-------------\n");
+            }
+        }
     }
 
     static void GetAlphabetFromLetter(char letter)
