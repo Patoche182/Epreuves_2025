@@ -8,6 +8,7 @@ Exemples d’utilisation :
     solide
     !
 */
+
 class Terre02
 {
     static void Main(string[] args)
@@ -30,7 +31,6 @@ class Terre02
         }
     }
 }
-
 
 
 // Methode 2:
