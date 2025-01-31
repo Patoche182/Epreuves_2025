@@ -11,6 +11,7 @@ Exemples d’utilisation :
     erreur.
 */
 
+
 class Terre05
 {
     static void Main()
@@ -35,11 +36,13 @@ class Terre05
         } while (true);
     }
 
+
     static int Division(int a, int b)
     {
         int resultat = a / b;
         return resultat;
     }
+
 
     static int Reste(int a, int b)
     {
