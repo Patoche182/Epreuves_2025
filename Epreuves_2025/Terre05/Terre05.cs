@@ -50,16 +50,16 @@ class Terre05
         return reste;
     }
 
-    Console.WriteLine("Donne-moi un chiffre:");
-     string response = Console.ReadLine();
-    int a = 10;
-    int b = 3;
-    Console.WriteLine(Division(a, b));
-    Console.WriteLine(Reste(a, b));
+    // Console.WriteLine("Donne-moi un chiffre:");
+    // string response = Console.ReadLine();
+    //int a = 10;
+    //int b = 3;
+    //Console.WriteLine(Division(a, b));
+    //Console.WriteLine(Reste(a, b));
 
-    static (int, int) Reste(int a, int b)
-    {
-        int reste = a % b;
-        return (resultat, reste);
-    }
+    //static (int, int) Reste(int a, int b)
+    //{
+    //    int reste = a % b;
+    //    return (resultat, reste);
+    //}
 }
