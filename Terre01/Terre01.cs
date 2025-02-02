@@ -19,30 +19,30 @@ class Terre01
         Console.WriteLine(AppDomain.CurrentDomain.FriendlyName + ".cs");
 
         // Methode 1 :
-        string path = Process.GetCurrentProcess().MainModule.FileName;              //Obtenir le chemin d'accès complet du programme en cours d'exécution 
-        string file = System.IO.Path.GetFileName(path);                             //Extraire le nom du fichier à partir du chemin complet 
-        Console.WriteLine(file);                                                    //Afficher le nom du fichier 
+        string path = Process.GetCurrentProcess().MainModule.FileName;              //Obtenir le chemin d'accès complet du programme en cours d'exécution
+        string file = System.IO.Path.GetFileName(path);                             //Extraire le nom du fichier à partir du chemin complet
+        Console.WriteLine(file);                                                    //Afficher le nom du fichier
 
         // Methode 2 :
         string executablePath = Assembly.GetExecutingAssembly().Location;           // récupère le chemin d'accès complet du fichier exécutable (.exe) de l'application en cours d'exécution.
-        string[] segments = executablePath.Split(Path.DirectorySeparatorChar);      // Séparer les segments du chemin avec Path.DirectorySeparatorChar 
+        string[] segments = executablePath.Split(Path.DirectorySeparatorChar);      // Séparer les segments du chemin avec Path.DirectorySeparatorChar
 
         // Methode 3 :
-        string lastSegment = segments.Last();                                       // Utilise .Last() 
+        string lastSegment = segments.Last();                                       // Utilise .Last()
         Console.WriteLine(lastSegment);
 
         // Methode 4 :
-        string lastSegmentIndex = segments[^1];                                     // Utilise l'indexation de fin  
+        string lastSegmentIndex = segments[^1];                                     // Utilise l'indexation de fin
         Console.WriteLine(lastSegmentIndex);
 
         // Methode attendu ?
         string pathProgram = Process.GetCurrentProcess().MainModule.FileName;
         Console.WriteLine(pathProgram);
-        string[] iteration = pathProgram.Split("\\");                               // On sépare par l'antiSlash "\" (qu'on échap ici => "\\") 
+        string[] iteration = pathProgram.Split("\\");                               // On sépare par l'antiSlash "\" (qu'on échap ici => "\\")
         string lastIteration = iteration.Last();
-        Console.WriteLine(iteration[5]);                                            // Exemple pour récupérer un index quelconque  
+        Console.WriteLine(iteration[5]);                                            // Exemple pour récupérer un index quelconque 
         Console.WriteLine(lastIteration);
-        string programName = lastIteration.Replace(".exe", ".cs");                  // On remplace le .exe par .cs pour convenir à l'énoncé ... 
+        string programName = lastIteration.Replace(".exe", ".cs");                  // On remplace le .exe par .cs pour convenir à l'énoncé ...
         Console.WriteLine(programName);
     }
 }
