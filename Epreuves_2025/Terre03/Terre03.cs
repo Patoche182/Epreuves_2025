@@ -15,30 +15,6 @@ class Terre03
 {
     static void Main()
     {
-        // Méthode 2 :
-
-        // Avant Optimisation ChatGPT
-        //    do
-        //    {
-        //        Console.Write("Veuillez entrer une lettre (ou 'exit' pour quitter) : ");
-        //        string userInput = Console.ReadLine();
-
-        //        if (userInput.ToLower() == "exit")
-        //            break;
-
-        //        if (userInput.Length == 1 && char.IsLetter(userInput[0]))
-        //        {
-        //            char userLetter = char.ToLower(userInput[0]);
-        //            GetAlphabetFromLetter(userLetter);
-        //        }
-        //        else
-        //        {
-        //            Console.WriteLine("Entrée non valide. Vous avez entré un chiffre ou plusieurs caractères.");
-        //        }
-        //    } while (true);
-        //}
-
-        // Après Optimisation ChatGPT
         while (true)
         {
             Console.Write("Veuillez entrer une lettre : (ou 'exit' pour quitter)");
