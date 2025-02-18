@@ -40,7 +40,7 @@ class Terre04
             {
                 Console.WriteLine("Tu ne me la mettras pas à l'envers.");
             }
-            Console.WriteLine("----------=----------=----------=----------=----------");
+            //Console.WriteLine("----------=----------=----------=----------=----------");
         } while (true);
     }
 
