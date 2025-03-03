@@ -19,14 +19,6 @@ class Terre04
 {
     static void Main()
     {
-        // Console.WriteLine(System.IO.Path.GetTempPath());
-
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        //Console.WriteLine("Cette console récupère en [Entrée] le chiffre donné et renvoi en [Sortie] si c'est un chiffre Pair ou Impaire. \nIl renvoi aussi si il est Positif ou Négatif.");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-
-        // Boucle Do-While
         do
         {
             Console.WriteLine("Donne-moi un chiffre (ou 'exit' pour quitter) :");
@@ -50,11 +42,11 @@ class Terre04
     {
         if (nombre % 2 == 0) // On vérifie si le modulo de 2 de ce chiffre est égal à 0 (10/2 = 5 reste 0). Dans ce cas, il est Pair.
         {
-            return "Pair";
+            return " Pair ";
         }
         else
         {
-            return "Impair";
+            return " Impair ";
         }
     }
 
@@ -63,11 +55,11 @@ class Terre04
     {
         if (nombre > 0)
         {
-            return "Positif";
+            return " Positif ";
         }
         else if (nombre < 0)
         {
-            return "Négatif";
+            return " Négatif ";
         }
         else
         {
