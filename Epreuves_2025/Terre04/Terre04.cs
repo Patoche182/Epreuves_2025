@@ -36,8 +36,6 @@ class Terre04
         } while (true);
     }
 
-    // Méthodes
-    // Voilà commment déterminer si l’argument donné est un entier pair ou impair
     static string PairOuImpair(int nombre)
     {
         if (nombre % 2 == 0) // On vérifie si le modulo de 2 de ce chiffre est égal à 0 (10/2 = 5 reste 0). Dans ce cas, il est Pair.
@@ -50,7 +48,6 @@ class Terre04
         }
     }
 
-    // Voilà comment gérez aussi les entiers négatifs.
     static string PositifOuNegatif(int nombre)
     {
         if (nombre > 0)
