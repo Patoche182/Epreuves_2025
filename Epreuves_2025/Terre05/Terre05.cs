@@ -23,7 +23,7 @@ class Terre05
             Console.WriteLine("Maintenant, par quelle valeur souhaite-tu le diviser (ou 'exit' pour quitter) :");
             int b = Convert.ToInt32(Console.ReadLine());
 
-            if (b != 0) // le deuxième nombre doit être différent de zéro avant de continuer
+            if (b != 0)     // le deuxième nombre doit être différent de zéro avant de continuer
             {
                 Console.WriteLine("Le résultat de la division est " + Division(a, b) + ". Le reste est de " + Reste(a, b));
             }
@@ -43,20 +43,7 @@ class Terre05
 
     static int Reste(int a, int b)
     {
-        int reste = a % b; // à modifier pour ne pas utiliser le Modulo
+        int reste = a % b;
         return reste;
     }
-
-    // Console.WriteLine("Donne-moi un chiffre:");
-    // string response = Console.ReadLine();
-    //int a = 10;
-    //int b = 3;
-    //Console.WriteLine(Division(a, b));
-    //Console.WriteLine(Reste(a, b));
-
-    //static (int, int) Reste(int a, int b)
-    //{
-    //    int reste = a % b;
-    //    return (resultat, reste);
-    //}
 }
