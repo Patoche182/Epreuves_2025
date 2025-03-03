@@ -35,13 +35,13 @@ class Terre05
         } while (true);
     }
 
-    static int Division(int a, int b) 
+    static int Division(int a, int b)
     {
         int resultat = a / b;
         return resultat;
     }
 
-    static int Reste(int a, int b) 
+    static int Reste(int a, int b)
     {
         int reste = a % b;
         return reste;

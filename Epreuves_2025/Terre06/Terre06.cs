@@ -39,7 +39,7 @@ class Terre06
     // Méthodes :
     static string Inverser(string chaine)
     {
-        string inverse = ""; // Initialisation
+        string inverse = "";    // Initialisation
         for (int i = chaine.Length - 1; i >= 0; i--)
         {
             // écrire les Char un à un dans inverse
