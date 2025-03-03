@@ -15,11 +15,6 @@ class Terre06
 {
     static void Main()
     {
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        //Console.WriteLine("Cette console inverse une chaîne de caractère. \nAutrement dit, le mot ou la phrase est à l'envers.");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-
         do
         {
             Console.WriteLine("Ecris un mot ou une phrase (ou 'exit' pour quitter) :");

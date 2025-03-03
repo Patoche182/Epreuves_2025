@@ -13,7 +13,7 @@ Attention : votre programme devra utiliser une boucle.
 
 class Terre03
 {
-    static void Main()
+    static void Main() 
     {
         while (true)
         {
@@ -41,9 +41,9 @@ class Terre03
 
     static void GetAlphabetFromLetter(char letter)
     {
-        string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //  abcdefghijklmnopqrstuvwxyz  "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";         // abcdefghijklmnopqrstuvwxyz "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
         letter = char.ToLower(letter);
-        bool found = false; // J'intègre un bool ==> 
+        bool found = false;
         /*
          La variable found est une variable booléenne (de type bool) qui est utilisée comme un indicateur pour suivre si la lettre de l'utilisateur a été trouvée lors de la boucle à travers l'alphabet.
          Son objectif est de déterminer à partir de quelle position dans l'alphabet l'affichage doit commencer.
