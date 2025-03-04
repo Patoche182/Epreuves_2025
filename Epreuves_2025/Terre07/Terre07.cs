@@ -20,21 +20,17 @@ class Terre07
 {
     static void Main()
     {
-        Console.WriteLine("==========-==========-==========-==========-==========");
-        Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        Console.WriteLine("Cette console affiche le nombre de caractères d’une chaîne de caractères, sans utiliser la fonction Length !");
-        Console.WriteLine("==========-==========-==========-==========-==========");
-
         do
         {
-            Console.WriteLine("Veuillez entrer une chaîne de caradctère. (ou 'exit' pour quitter) :");
+            Console.WriteLine("Veuillez entrer une chaîne de caractère. (ou 'exit' pour quitter) :");
+            Console.WriteLine("Veuillez entrer une chaîne de caractère. (ou 'exit' pour quitter) :");
             string userInput = Console.ReadLine();
             string chaine = userInput;
 
             if (chaine == "exit")
                 break;
 
-            if (chaine != "") // on pourrait ajouter une condition pour que seul les lettres soit prise en compte :  if ((chaine != "") && (chaine != int))  ==>> Correction GPT ==>> if (!string.IsNullOrEmpty(chaine) && !chaine.Any(char.IsDigit)) 
+            if (chaine != "") 
             {
                 Console.WriteLine("La chaîne contient - " + Taille(chaine) + " - caractères.");
             }
@@ -56,5 +52,4 @@ class Terre07
         }
         return count.ToString(); // on renvoie la valeur final de count dans en string
     }
-
 }
