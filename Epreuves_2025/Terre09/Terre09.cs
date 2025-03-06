@@ -13,19 +13,6 @@ class Terre09
 {
     static void Main()
     {
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        //Console.WriteLine("Cette console affiche la Racine Carré d'un nombre, entier et positif :");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-
-        // Qu'est ce qu'une racine carré mathématiquement parlant : 
-        // Décomposer les étapes : 
-        // Par exemple : Racine de 4 est 2. Car 2 au carré = 4
-        // Autre exemple : Racine de 16 = 4. Car 4 x 4 = 16
-        // Autre exemple : Racine de 100 = 10. Car 10 x 10 = 100
-        // 
-        // Déjà il faut vérifier que le nombre donné est un entier positif.
-
         do
         {
             Console.WriteLine("Veuillez entrer un nombre : (ou 'exit' pour quitter)");
@@ -37,15 +24,10 @@ class Terre09
             if (double.TryParse(baseNumberInput, out double baseNumber) && baseNumber > 0)
             {
                 RacineCarre((int)baseNumber);
-                // Console.WriteLine(RacineCarre(Convert.ToInt32(baseNumber)).ToString("F2"));
-                // Console.WriteLine("Le résultat du calcul de la Racine Carré est : " + RacineCarre((int)baseNumber));
-                // Console.WriteLine("Le résultat du calcul de la Racine Carré est : " + RacineCarre(baseNumber).ToString("F2"));
             }
             else
             {
-                Console.WriteLine("- /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ -");
-                Console.WriteLine("- Attention ! Veuillez entrer un nombre ENTIER et POSITIF svp -");
-                Console.WriteLine("- /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ /!\\ -");
+                Console.WriteLine("- /!\\ /!\\ Attention ! Veuillez entrer un nombre ENTIER et POSITIF svp /!\\ /!\\ -");
             }
             Console.WriteLine("----------=----------=----------=----------=----------");
 
@@ -53,7 +35,7 @@ class Terre09
     }
 
     // Méthodes :
-    static double RacineCarre(int baseNumber)
+    static double RacineCarre(int baseNumber) 
     {
         double result = Math.Pow(baseNumber, 0.5); // 0.5 et non pas 0,5 !
 

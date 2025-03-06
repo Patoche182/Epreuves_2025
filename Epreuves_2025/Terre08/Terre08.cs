@@ -17,7 +17,6 @@ class Terre08
     {
         do
         {
-            // On définie le NOMBRE
             Console.WriteLine("Veuillez entrer un NOMBRE : (ou 'exit' pour quitter)");
             string baseNumberInput = Console.ReadLine();
 
