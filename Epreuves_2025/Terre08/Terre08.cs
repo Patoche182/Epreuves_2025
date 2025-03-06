@@ -13,13 +13,8 @@ Fonctions interdites:
 
 class Terre08
 {
-    static void Main()
+    static void Main() 
     {
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        //Console.WriteLine("Cette console affiche le résultat d’une puissance entre un nombre et un exposant.");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-
         do
         {
             // On définie le NOMBRE
@@ -44,7 +39,7 @@ class Terre08
                 }
                 else
                 {
-                    Console.WriteLine("Attention ! Vous n'avez pas entrer un exposant valide... Concentrez-vous ! \n|||||||||||||||| On recommence : ||||||||||||||||");
+                    Console.WriteLine("Attention ! Vous n'avez pas entrer un exposant valide... Concentrez-vous ! \n||||||||||||||| On recommence : |||||||||||||||");
                 }
             }
             else
