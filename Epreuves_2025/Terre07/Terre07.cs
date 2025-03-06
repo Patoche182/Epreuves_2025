@@ -18,11 +18,10 @@ Fonctions interdites:
 
 class Terre07
 {
-    static void Main()
+    static void Main() 
     {
         do
         {
-            Console.WriteLine("Veuillez entrer une chaîne de caractère. (ou 'exit' pour quitter) :");
             Console.WriteLine("Veuillez entrer une chaîne de caractère. (ou 'exit' pour quitter) :");
             string userInput = Console.ReadLine();
             string chaine = userInput;
@@ -45,8 +44,8 @@ class Terre07
     // Méthodes :
     static string Taille(string chaine)
     {
-        int count = 0; // on initialise notre variable Count à zéro
-        foreach (char lettre in chaine) // pour chaque lettre, et espace, dans notre chaine on ajoute +1 à notre variable count
+        int count = 0;                      // on initialise notre variable Count à zéro
+        foreach (char lettre in chaine)     // pour chaque lettre, et espace, dans notre chaine on ajoute +1 à notre variable count
         {
             count++;
         }
