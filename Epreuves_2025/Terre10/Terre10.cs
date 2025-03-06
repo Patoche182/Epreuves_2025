@@ -12,23 +12,8 @@ Attention : 0 et 1 ne sont pas des nombres premiers. Gérez les erreurs d’argu
 
 class Terre10
 {
-    static void Main()
+    static void Main() 
     {
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        //Console.WriteLine("Cette console affiche si le nombre donné est un 'Nombre Premier'.");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-
-        /* NOMBRE PREMIER
-           Nombre naturel qui est supérieur à 1 et qui a exactement deux diviseurs distincts, soit 1 et lui-même.
-           Il existe une infinité de nombres premiers.
-
-           EXEMPLE
-           Le nombre 13 est un nombre premier car il n’est divisible que par 1 et 13.
-           Voici la liste des 15 nombres premiers inférieurs à  50 : 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47.
-           Le nombre 15 n’est pas un nombre premier, car il a plus de deux diviseurs : div (15) = {1, 3, 5, 15}.
-           Le nombre 9 n’est pas un nombre premier, car il a plus de deux diviseurs : div (9) = {1, 3, 9}.    */
-
         do
         {
             Console.WriteLine("Veuillez entrer un nombre entier positif (ou 'exit' pour quitter) :");
@@ -59,7 +44,7 @@ class Terre10
     }
 
     // Méthode :
-    static bool EstNombrePremier(int n)
+    static bool EstNombrePremier(int n) 
     {
         if (n <= 1)
         {
