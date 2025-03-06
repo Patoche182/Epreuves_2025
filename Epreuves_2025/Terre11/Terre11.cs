@@ -10,12 +10,8 @@ Attention : midi et minuit.
 
 class Terre11
 {
-    static void Main(string[] args)
+    static void Main(string[] args) 
     {
-        //Console.WriteLine("==========-==========-==========-==========-==========");
-        //Console.WriteLine("Bonjour ! \nBienvenue dans ce programme.");
-        //Console.WriteLine("Cette console transforme une heure affichée en format 24h en une heure affichée en format 12h.");
-        //Console.WriteLine("==========-==========-==========-==========-==========");
         string input;
         do
         {
@@ -36,7 +32,7 @@ class Terre11
         } while (Console.ReadLine().ToUpper() == "O");
     }
 
-    static string ConvertTo12HourFormat(DateTime time)
+    static string ConvertTo12HourFormat(DateTime time) 
     {
         string period = "AM";
         if (time.Hour >= 12)
