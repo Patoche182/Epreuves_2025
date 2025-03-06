@@ -11,7 +11,7 @@ Note : [] est à remplacer par un adjectif de votre choix (facile ?)
 
 class Terre15
 {
-    static void Main()
+    static void Main() 
     {
         Console.WriteLine("J'ai terminé l'Epreuve de la Terre et c’était chouette !");
     }
