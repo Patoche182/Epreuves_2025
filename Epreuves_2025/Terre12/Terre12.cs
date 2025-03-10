@@ -29,7 +29,7 @@ class Terre12
                 Console.WriteLine("Format d'heure incorrect. Assurez-vous d'utiliser le format HH:mm.");
             }
 
-            Console.Write("Voulez-vous continuer? (O/N) : ");
+            //Console.Write("Voulez-vous continuer? (O/N) : ");
         } while (true);
     }
 
