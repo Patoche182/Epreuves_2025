@@ -8,7 +8,7 @@ Exemples d’utilisation :
 Attention : votre programme devra utiliser une boucle. 
 */
 
-class Terre00
+class Terre00 
 {
     static void Main()
     {

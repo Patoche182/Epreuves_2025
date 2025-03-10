@@ -27,7 +27,7 @@ class Terre09
             }
             else
             {
-                Console.WriteLine("- /!\\ /!\\ Attention ! Veuillez entrer un nombre ENTIER et POSITIF svp /!\\ /!\\ -");
+                Console.WriteLine("/!\\ /!\\ Attention ! Veuillez entrer un nombre ENTIER et POSITIF svp /!\\ /!\\");
             }
             Console.WriteLine("----------=----------=----------=----------=----------");
 
